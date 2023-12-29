@@ -9,7 +9,7 @@ const cors = require('cors')
 const app = express();
 dotenv.config({ path: './config/config.env' });
 const corsOptions ={
-   origin:['*','http://localhost:5173'], 
+   origin:['*','http://localhost:5173','https://tracker-frontend-alpha.vercel.app/'], 
    credentials:true,            //access-control-allow-credentials:true
    optionSuccessStatus:200,
 }
