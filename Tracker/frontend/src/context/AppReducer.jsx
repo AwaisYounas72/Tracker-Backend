@@ -1,7 +1,7 @@
 // Delete Transaction Function
 const deleteTrans = async (id) => {
   try {
-    const res = await fetch(`http://localhost:5000/api/v1/transactions/${id}`, {
+    const res = await fetch(`https://tracker-backend-sigma.vercel.app/api/v1/transactions/${id}`, {
       method: "delete"
     })
 
@@ -14,7 +14,7 @@ const deleteTrans = async (id) => {
 // Add Transaction Function
 const AddTrans = async (transaction) => {
   console.log(transaction)
-  const res = await fetch(`http://localhost:5000/api/v1/transactions`, {
+  const res = await fetch(`https://tracker-backend-sigma.vercel.app/api/v1/transactions`, {
     method: "post",
     headers: {
       "Content-Type": "application/json"
