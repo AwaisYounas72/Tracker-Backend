@@ -18,7 +18,7 @@ export const GlobalProvider = ({ children }) => {
 
   const fetchTransactions = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/v1/transactions', {
+      const res = await fetch('https://tracker-backend-sigma.vercel.app/api/v1/transactions', {
         method: 'GET'
       })
       const data = await res.json();
